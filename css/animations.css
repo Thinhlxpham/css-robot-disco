@@ -1,0 +1,192 @@
+/*defaul*/
+.robot-container {
+  transition: all 0.2s ease-in-out;
+}
+/*call animation name eye left*/
+.robot-eye-left {
+  animation-name: eye-scale;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-duration: 2s;
+  animation-direction: alternate;
+}
+/*style animation left eyes*/
+@keyframes eye-scale {
+  from {
+    transform: scale(0.3);
+  }
+  to {
+    transform: scale(1.3);
+  }
+}
+/*call animation name eye right*/
+.robot-eye-right {
+  animation: eye-run 3s infinite linear, eye-size 2s infinite;
+}
+/*scale size width right eyes*/
+@keyframes eye-size {
+  from {
+    transform: scaleX(0.5);
+  }
+  to {
+    transform: scaleX(1.5);
+  }
+}
+/*style animation right eyes*/
+@keyframes eye-run {
+  0% {
+    top: 0px;
+    right: 0px;
+    background-color: aqua;
+  }
+  25% {
+    top: 0px;
+    right: 80px;
+  }
+  50% {
+    top: 80px;
+    right: 80px;
+  }
+  75% {
+    top: 80px;
+    right: 0;
+  }
+  100% {
+    top: 0px;
+    right: 0px;
+    background-color: purple;
+  }
+}
+/*call ear left name aniation*/
+.robot-ear-left {
+  animation: ear-move 2s infinite;
+}
+/*style animation left ear*/
+@keyframes ear-move {
+  from {
+    transform: translateX(-50px);
+    opacity: -1;
+  }
+  to {
+    transform: translateX(20px);
+  }
+}
+/*call ear left name aniation*/
+.robot-ear-right {
+  animation: ear-rotate 2s infinite;
+}
+/*style animation right ear*/
+@keyframes ear-rotate {
+  from {
+    transform: rotate(-50deg);
+  }
+  to {
+    transform: rotate(0.5turn);
+  }
+}
+/*call nose click name aniation*/
+.robot-nose:hover {
+  animation: nose-rotate 3s alternate;
+}
+/*style animation nose rotation*/
+@keyframes nose-rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(-95deg);
+  }
+}
+/*call nose teeth aniation*/
+.robot-teeth {
+  animation: teeth-shake 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both infinite;
+  transform: translate3d(0, 0, 0);
+}
+/*style animation teeth shake*/
+@keyframes teeth-shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+/*call hair scale aniation*/
+.robot-hair-style {
+  animation: scale-hair 3s infinite;
+}
+/*style animation hair move*/
+@keyframes scale-hair {
+  0% {
+    transform: translate(0);
+    transform: scaleY(0.5);
+  }
+  25% {
+    transform: translateX(50%);
+    transform: scaleY(1.5);
+  }
+  50% {
+    transform: translateZ(30px);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+.robot-hair-one {
+  animation: move-hair1 3s infinite;
+}
+@keyframes move-hair1 {
+  from {
+    transform: scaleY(0.4);
+  }
+  to {
+    transform: scaleY(1.2);
+  }
+}
+.robot-hair-two {
+  animation: move-hair2 3s infinite;
+}
+@keyframes move-hair2 {
+  from {
+    transform: scaleY(0.4);
+  }
+  to {
+    transform: scaleY(1.2);
+  }
+}
+.robot-hair-three {
+  animation: move-hair3 3s infinite;
+}
+@keyframes move-hair3 {
+  from {
+    transform: scaleY(0.4);
+  }
+  to {
+    transform: scaleY(1.5);
+  }
+}
+.robot-hair-fourth {
+  animation: move-hair4 3s infinite;
+}
+@keyframes move-hair4 {
+  from {
+    transform: scaleY(0.4);
+  }
+  to {
+    transform: scaleY(1.5);
+  }
+}
